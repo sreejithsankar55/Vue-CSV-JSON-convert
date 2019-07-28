@@ -30,6 +30,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 Additionally install
 ```
+npm install -g json-server --save-dev
 npm install -D json-server-auth
 ```
 in the location of your choice and create db.json file  
@@ -52,7 +53,14 @@ Sample db.json file for this project contains something like this
 ```
 "users" contain the registered users who can login and "jsonData" holds the converted json converted csv file.   
 
-Start it by running this command  
+Start the server by running this command  
 ```
 json-server db.json -m ./node_modules/json-server-auth
+```
+
+If you face issues like port or unable to run it it might be due to node modules or pacakage.json missing file problems
+So you could run the following commands and start the json server again
+```
+npm init
+npm install
 ```
