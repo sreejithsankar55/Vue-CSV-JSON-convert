@@ -32,9 +32,10 @@ Additionally install
 ```
 npm install -D json-server-auth
 ```
-in the location of your choice and create db.json file
-Register the users as given in this link:  https://www.npmjs.com/package/json-server-auth
-Sample db.json file for this project contains something like this
+in the location of your choice and create db.json file  
+Register the users as given in this link:  https://www.npmjs.com/package/json-server-auth\  
+
+Sample db.json file for this project contains something like this  
 ```
 {
   "jsonData": [
@@ -49,8 +50,9 @@ Sample db.json file for this project contains something like this
   ]
 }
 ```
-"users" contain the registered users who can login and "jsonData" holds the converted json converted csv file.
-Start it by running this command 
+"users" contain the registered users who can login and "jsonData" holds the converted json converted csv file.\  
+
+Start it by running this command  
 ```
 json-server db.json -m ./node_modules/json-server-auth
 ```
