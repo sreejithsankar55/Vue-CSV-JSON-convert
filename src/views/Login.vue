@@ -70,9 +70,6 @@ export default {
           email: this.email,  //the data properties are given values and dispatched to given path
           password: this.password
         })
-        .then(() => { //appending the errors if any
-          this.errors = [];
-        })
         .catch(err => {
           this.errors.push(err);
         });
