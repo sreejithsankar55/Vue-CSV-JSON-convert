@@ -70,7 +70,11 @@ export default {
           email: this.email,  //the data properties are given values and dispatched to given path
           password: this.password
         })
+<<<<<<< HEAD
         .catch(err => {
+=======
+        .catch(err => { //appending the errors if any
+>>>>>>> c3e0e90b285f4561492a407c04bab35bf561e448
           this.errors.push(err);
         });
     }

@@ -1,4 +1,4 @@
-import { api, setToken, clearToken } from "../api";
+import { api, setToken } from "../api";
 import Router from "../../router";
 export default {
   //we perform the login logic part and verifying
@@ -20,7 +20,6 @@ export default {
   },
   actions: {
     loginUser: async function({ commit }, { email, password }) {
-      clearToken();
       try {
         const response = await api.post("/login", {
           //sending a post request with below parameters as body
